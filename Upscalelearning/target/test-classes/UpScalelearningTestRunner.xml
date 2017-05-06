@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Upscalelearning" parallel="tests">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="userName" value="rahmanww"/>
+    <parameter name="accessKey" value="6f132866-de72-43fd-b49a-e6f81d26bfe3"/>
+    <parameter name="os" value="Win8"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="46.0"/>
+    <parameter name="url" value="http://pnt.upscalelearning.com"/>
+
+    <test name = "Upscalelearning Search">
+        <classes>
+            <class name="home.TestLogin"/>
+        </classes>
+    </test>
+
+</suite>
