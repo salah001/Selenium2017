@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Amazon]" parallel="tests">
+  <parameter name="useCloudEnv" value="true"/>
+  <parameter name="os" value="Mac"/>
+  <parameter name="os_version" value="Sierra"/>
+  <parameter name="browserVersion" value="45.0"/>
+  <parameter name="browserName" value="firefox"/>
+  <parameter name="cloudEnvName" value="browserstack"/>
+  <parameter name="url" value="http://amazon.com"/>
+  <test name="Amazon Home(failed)" parallel="tests">
+    <classes>
+      <class name="home.TestAmazonHome">
+        <methods>
+          <include name="amazonTitle"/>
+          <include name="setUp"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- home.TestAmazonHome -->
+      <class name="home.searchItems">
+        <methods>
+          <include name="setUp"/>
+          <include name="cleanUp"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- home.searchItems -->
+    </classes>
+  </test> <!-- Amazon Home(failed) -->
+</suite> <!-- Failed suite [Amazon] -->

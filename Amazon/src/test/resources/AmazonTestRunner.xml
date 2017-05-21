@@ -2,18 +2,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Amazon" parallel="tests">
-
     <parameter name="useCloudEnv" value="false"/>
-    <parameter name="userName" value="rahmanww"/>
-    <parameter name="accessKey" value="6f132866-de72-43fd-b49a-e6f81d26bfe3"/>
-    <parameter name="os" value="Win8"/>
-    <parameter name="browserName" value="chrome"/>
-    <parameter name="browserVersion" value="46.0"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="Mac"/>
+    <parameter name="os_version" value="Sierra"/>
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="browserVersion" value="45.0"/>
     <parameter name="url" value="http://amazon.com"/>
 
     <test name = "Amazon Home">
         <classes>
-            <class name="home.TestAmazonHome"/>
+            <class name="searchItems.SearchItems"/>
+            <class name="searchItems.DropDownMenuSearch"/>
         </classes>
     </test>
 
