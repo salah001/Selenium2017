@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class DataBaseDataReader extends CommonAPI {
 
-    public void dataFromDatabase()throws Exception,InterruptedException{
+    public void dataFromDatabase()throws Exception, InterruptedException{
         TestLogger.log(getClass().getSimpleName() + ": " + converToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         SearchPage searchPage = PageFactory.initElements(driver,SearchPage.class);
         ConnectDB connectDB = new ConnectDB();

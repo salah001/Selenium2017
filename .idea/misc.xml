@@ -8,6 +8,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/Upscalelearning/pom.xml" />
         <option value="$PROJECT_DIR$/ebay/pom.xml" />
       </set>
     </option>

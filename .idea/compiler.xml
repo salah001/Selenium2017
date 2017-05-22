@@ -10,7 +10,6 @@
         <module name="ebay" />
         <module name="Generic" />
         <module name="NYP" />
-        <module name="Upscalelearning" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
