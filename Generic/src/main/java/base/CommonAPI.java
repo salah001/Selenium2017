@@ -158,7 +158,7 @@ public class CommonAPI {
         if(browserName.equalsIgnoreCase("chrome")){
 
             if(OS.equalsIgnoreCase("Mac")){
-                System.setProperty("webdriver.chrome.driver", "/Users/salah/Desktop/automation-march2017-(original)/Generic/driver/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "../Generic/driver/chromedriver");
             }else if(OS.equalsIgnoreCase("Win")){
                 System.setProperty("webdriver.chrome.driver", "/Users/salah/Desktop/automation-march2017-(original)/Generic/driver/chromedriver.exe");
             }
@@ -167,7 +167,7 @@ public class CommonAPI {
         }else if(browserName.equalsIgnoreCase("firefox")){
 
             if(OS.equalsIgnoreCase("Mac")){
-                System.setProperty("webdriver.gecko.driver", "/Users/salah/Desktop/automation-march2017-(original)/Generic/driver/geckodriver");
+                System.setProperty("webdriver.gecko.driver", "../Generic/driver/geckodriver");
             }else if(OS.equalsIgnoreCase("Windows")) {
                 System.setProperty("webdriver.gecko.driver", "/Users/salah/Desktop/automation-march2017-(original)/Generic/driver/geckodriver");
             }
