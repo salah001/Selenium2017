@@ -160,7 +160,7 @@ public class CommonAPI {
             if(OS.equalsIgnoreCase("Mac")){
                 System.setProperty("webdriver.chrome.driver", "../Generic/driver/chromedriver");
             }else if(OS.equalsIgnoreCase("Win")){
-                System.setProperty("webdriver.chrome.driver", "/Users/salah/Desktop/automation-march2017-(original)/Generic/driver/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "../Generic/driver/chromedriver.exe");
             }
             driver = new ChromeDriver();
 
@@ -169,13 +169,13 @@ public class CommonAPI {
             if(OS.equalsIgnoreCase("Mac")){
                 System.setProperty("webdriver.gecko.driver", "../Generic/driver/geckodriver");
             }else if(OS.equalsIgnoreCase("Windows")) {
-                System.setProperty("webdriver.gecko.driver", "/Users/salah/Desktop/automation-march2017-(original)/Generic/driver/geckodriver");
+                System.setProperty("webdriver.gecko.driver", "../Generic/driver/geckodriver");
             }
             driver = new FirefoxDriver();
 
         } else if(browserName.equalsIgnoreCase("ie")) {
 
-            System.setProperty("webdriver.ie.driver", "/Users/salah/Desktop/automation-march2017-(original)/Generic/driver/IEDriverServer.exe");
+            System.setProperty("webdriver.ie.driver", "../Generic/driver/IEDriverServer.exe");
             driver = new InternetExplorerDriver();
         }
         return driver;
