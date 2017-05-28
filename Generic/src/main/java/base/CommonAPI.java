@@ -109,7 +109,7 @@ public class CommonAPI {
 
     @Parameters({"url","useCloudEnv","cloudEnvName","os","os_version","browserName","browserVersion"})
     @BeforeMethod
-    public void setUp(@Optional("http://amazon.com") String url, @Optional("false") boolean useCloudEnv, @Optional("browserstack")
+    public void setUp(@Optional("http://amazon.com") String url, @Optional("true") boolean useCloudEnv, @Optional("browserstack")
                       String cloudEnvName, @Optional("Windows") String os, @Optional("10") String os_version,
                       @Optional("firefox") String browserName, @Optional("34") String browserVersion)throws IOException{
         if (useCloudEnv == true){
